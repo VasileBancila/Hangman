@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman-style.css">
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <h1>Hangman Game</h1>
+    <div>
+        <p>Lives: 7</p>
+        <label for="guess">Guess a word:</label>
+        <input type="text" id="guess" maxlength="1">
+        <button type="submit">Send</button>
+        <button type="button" id="reload">Reload</button>
+        <p id="word"></p>
+        <p id="message"></p>
+    </div>
+    <script type="script" src="hangman-script.js"></script>
+</body>
+
+</html>
+
+<!--Spânzurătoare
+Să se creeze jocul clasic de spânzurătoare. În cadrul acestui joc se alege un cuvânt,
+iar utilizatorul trebuie să ghicească acest cuvânt.
+
+La început, utilizatorul va vedea doar numărul de litere din care este format cuvântul,
+iar pentru fiecare literă din cuvât va fi afișată o linie orizontală (_).
+
+Utilizatorul va ghici câte o literă de la a la z.
+Pentru fiecare literă ghicită corect, se va înlocui pe fiecare dintre pozițiile din cuvânt unde apare acea
+literă linia orizontală cu litera ghicită.
+
+Pentru fiecare literă ghicită care nu se află în cuvânt, utilizatorul va pierde o viață.
+
+Utilizatorul are un număr de 7 vieți.
+
+La finalul jocului să se afișeze în pagină (deci fără alert sau console.log) un mesaj corespunzător
+în funcție de câștigarea sau pierderea jocului.
+-->

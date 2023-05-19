@@ -1,0 +1,17 @@
+button {
+    background-color: rgb(50, 155, 40);
+    padding: 15px 25px;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+body {
+    text-align: center;
+}
+
+input {
+    width: 15%;
+    padding: 10px 20px;
+}
