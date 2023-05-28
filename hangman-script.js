@@ -3,11 +3,12 @@ let word = words[Math.floor(Math.random() * words.length)]; //choosing a random 
 let hiddenWord = [];
 let lives = 7;
 
-for (let i = 0; i < word.length; ++i) { 
-    hiddenWord[i] = "_";
+window.onload = function() { //mark the chosen word with an underline and display it
+    for (let i = 0; i < word.length; ++i) { 
+        hiddenWord[i] = "_";
+    }   
+    document.getElementById("word").innerHTML = hiddenWord.join(" ");
 }
-
-document.getElementById("word").innerHTML = hiddenWord.join(" ");
 
 function messageDisplay(status) { //we display the corresponding message
     let message = document.getElementById("message");
