@@ -40,7 +40,7 @@ function guessLetters () { //we check if the entered character is a letter and i
         return;
     }
     let correctLetter = false; 
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; ++i) {
         if (word[i] === letter) {
             hiddenWord[i] = letter;
             correctLetter = true;
